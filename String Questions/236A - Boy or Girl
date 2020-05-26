@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+	string s="";
+	cin>>s;
+	string male="IGNORE HIM!",female="CHAT WITH HER!";
+	std::map<char, int> mp;
+	for(int i=0;i<s.size();i++){
+		mp[s[i]]+=1;
+	}
+	if(mp.size()%2==0)
+		cout<<female;
+	else
+		cout<<male;
+	return 0;
+}
