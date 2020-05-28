@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+	int n,ans=0;
+	cin>>n;
+	for(int i=0;i<n;i++){
+		int count1=0;
+		for(int i=0;i<3;i++){
+			int yn;
+			cin>>yn;
+			if(yn==1)
+				count1++;
+		}
+
+		if(count1>1)
+			ans++;
+		count1=0;
+	}
+	cout<<ans;
+	return 0;
+}
