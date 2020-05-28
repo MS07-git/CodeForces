@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+	int n;
+	cin>>n;
+	int pre =0,count=1;
+	for(int i=0;i<n;i++){
+		int t;
+		cin>>t;
+		if(i==0){
+			pre=t;
+		}
+		else if(pre!=t){
+			count++;
+			pre=t;
+		}
+	}
+	cout<<count;
+	return 0;
+}
