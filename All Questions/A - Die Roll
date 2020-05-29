@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+	int n,m;
+	cin>>n>>m;
+	if(m>n){
+		int d=6-m+1;
+		int g=__gcd(d,6);
+		cout<<d/g<<"/"<<6/g;
+	}else if(m<n){
+		int d=6-n+1;
+		int g=__gcd(d,6);
+		cout<<d/g<<"/"<<6/g;
+	}else{
+		int d=6-m+1;
+		int g=__gcd(d,6);
+		cout<<d/g<<"/"<<6/g;
+	}
+	return 0;
+}
