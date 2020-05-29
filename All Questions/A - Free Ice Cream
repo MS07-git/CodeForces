@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+	long long  t,start,count=0;
+	cin>>t>>start;
+	while(t--){
+		char c;long long n;
+		cin>>c;
+		cin>>n;
+		if(c=='+')
+			start+=n;
+		else if(n<=start){
+			start-=n;
+		}
+		else{
+			count++;
+		}
+		
+	}
+	cout<<start<<" "<<count;
+	return 0;
+}
