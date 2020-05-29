@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+	char s;
+	set<char> s1;
+	while(1){
+		cin>>s;
+		if(s=='}'){
+			cout<<s1.size();
+			break;
+		}
+		else if(s!='{'&&s!='}'&&s!=','){
+			s1.insert(s);
+		}
+	}
+	return 0;
+}
