@@ -1,0 +1,24 @@
+    #include<bits/stdc++.h>
+    using namespace std;
+     
+    int main(){
+    	string s="",s1="";
+    	cin>>s;
+    	for(int i=0;i<s.size();i++){
+    		if(s[i]!='+')
+    			s1+=s[i];
+    	}
+    	s="";
+    	sort(s1.begin(),s1.end());
+    	for(int i=0;i<s1.size();i++){
+    		if(i==(s1.size()-1)){
+    			s+=s1[i];
+    		}
+    		else{
+    			s+=s1[i];
+    			s+='+';
+    		}
+    	}
+    	cout<<s;
+    	return 0;
+    }
