@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+	int n,t,k,d;
+	cin>>n>>t>>k>>d;
+	int time;
+	while(time<=d){
+		n-=k;
+		time+=t;
+	}
+	if(n>0)
+		cout<<"YES";
+	else cout<<"NO";
+	return 0;
+}
