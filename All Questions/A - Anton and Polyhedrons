@@ -1,0 +1,21 @@
+    #include<bits/stdc++.h>
+	    using namespace std;
+	     
+	    int main(){
+	    	long long n;
+	    	cin>>n;
+	    	std::map<string, int> mp;
+	    	mp["Tetrahedron"]=4;
+	    	mp["Cube"]=6;
+	    	mp["Octahedron"]=8;
+	    	mp["Dodecahedron"]=12;
+	    	mp["Icosahedron"]=20;
+	    	long long ans=0;
+	    	for(long long i=0;i<n;i++){
+	    		string s;
+	    		cin>>s;
+	    		ans+=mp[s];
+	    	}
+	    	cout<<ans;
+	    	return 0;
+	    }
