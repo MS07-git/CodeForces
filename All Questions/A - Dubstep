@@ -1,0 +1,31 @@
+    #include<bits/stdc++.h>
+    using namespace std;
+     
+    int main(){
+    	string s,m="WUB",ans="";
+    	cin>>s;
+    	long long count=0;
+    	for(int i=0;i<s.size();i++){
+ 			if(s[i]=='W'){
+ 				if(s[i+1]=='U'){
+ 					if(s[i+2]=='B'){
+ 						i+=2;
+ 						if(ans.size()!=0&&count==0&&i!=s.size()-1)
+ 							ans+=" ";
+ 						count++;
+ 					}else{
+ 						ans+=s[i];
+ 						count=0;
+ 					}
+ 				}else{
+ 					ans+=s[i];
+ 					count=0;
+ 				}
+ 			}else{
+ 				ans+=s[i];
+ 				count=0;
+ 			}
+    	}
+    	cout<<ans;
+    	return 0;
+    }
