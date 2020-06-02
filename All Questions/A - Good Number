@@ -1,0 +1,28 @@
+	    #include<bits/stdc++.h>
+	    using namespace std;
+	     
+	    int main(){
+	    	long long n,x,final=0;
+	    	cin>>n>>x;
+	    	bool flag=true;
+	    	while(n--){
+	    		string s;
+	    		cin>>s;
+	    		std::map<int, int> mp;
+	    		std::vector<int> v(s.begin(),s.end());
+	    		for(long long i=0;i<v.size();i++){
+	    			mp[v[i]]+=1;
+	    		}
+	    		for(long long i=48;i<=(48+x);i++){
+	    			if(!mp[i]){
+	    				flag=false;
+	    				break;
+	    			}
+	    		}
+	    		if(flag)
+	    			final++;
+	    		flag=true;
+	    	}
+	    	cout<<final;
+	    	return 0;
+	    }
