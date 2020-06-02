@@ -1,0 +1,29 @@
+    #include<bits/stdc++.h>
+    using namespace std;
+     
+    int main(){
+    	long long n,x,count=0,m,i;
+    	cin>>n>>x;
+    	if(n%2==0){
+    		m=n/2;
+    		if(x<=m){
+    			i=1;
+    			cout<<(x*2)-1;
+    		}else{
+    			i=2;
+    			x=x-m;
+    			cout<<(x*2);
+    		}
+    	}else{
+    		m=n/2+1;
+    		if(x<=m){
+    			i=1;
+    			cout<<(x*2)-1;
+    		}else{
+    			i=2;
+    			x=x-m;
+    			cout<<(x*2);
+    		}
+    	}
+    	return 0;
+    }
