@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+	     
+int main(){
+	long long n;
+	cin>>n;
+	string s;
+	cin>>s;
+	long long a[n];
+	for(long long i=0;i<n;i++){
+		cin>>a[i];
+	}
+	long long min=INT_MAX,store=0;
+	for(long long i=1;i<s.size();i++){
+		if(s[i-1]=='R'&&s[i]=='L'){
+			store=(a[i]-a[i-1])/2;
+			if(store<min)
+				min=store;
+		}
+	}
+	if(min!=INT_MAX)
+		cout<<min;
+	else
+		cout<<-1;
+   	return 0;
+}
